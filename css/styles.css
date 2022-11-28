@@ -3,7 +3,6 @@ html, body {
     font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: 0.9;
     margin: 0;
 }
 
@@ -36,12 +35,22 @@ html, body {
     border: 0px;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Mission Container */
 
 .mission-container {
     background-image: url('../img/img-mission-background.jpg');
     position: relative;
-    
     height: 700px;
     width: 1200px;
+}
+
+.mission-header {
+    background-color: black;
+    text-align: center;
 }
