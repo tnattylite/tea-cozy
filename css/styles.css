@@ -4,53 +4,68 @@ html, body {
     color: seashell;
     background-color: black;
     margin: 0;
+    height: 100%;
 }
 
-.header {
-    width: 100%;
-    position: fixed;
-    border-bottom: 1px solid seashell;
-    z-index: 10;
-}
-
-.nav {
+#container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
     align-items: center;
-    padding: 10px;
 }
 
 .logo {
-    size: 50px;
+    display: flex;
+    height: 50px;
+    align-self: center;
 }
 
-.nav li {
+div {
+    display: flex;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    justify-content: flex-end;
+}
+
+nav {
+    padding: 10px;
+    margin-left: auto;
+    display: flex;
+}
+
+nav li {
     list-style: none;
     display: inline-block;
     text-decoration: underline;
 }
 
-.nav li a {
+nav li a {
     color: seashell;
     border: 0px;
 }
 
-.container {
+main {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1; /* takes the remaining height of the "container" div */
+    overflow: auto; /* to scroll just the "main" div */
 }
 
-/* Mission Container */
-
-.mission-container {
+section {
+    display: flex;
     background-image: url('../img/img-mission-background.jpg');
-    position: relative;
-    height: 700px;
-    width: 1200px;
+    height: 100%;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .mission-header {
     background-color: black;
-    text-align: center;
+    /* text-align: center; */
 }
